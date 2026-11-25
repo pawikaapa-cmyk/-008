@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>รายการสั่งซื้อ — ผึ้งสีเหลือง</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* สไตล์ตารางเฉพาะหน้านี้ ให้เข้ากับธีมหลัก */
+    .table-wrap { overflow-x: auto; border: 1px solid var(--c-line); background: var(--c-white); }
+    #ordersTable { width: 100%; min-width: 860px; border-collapse: collapse; font-size: 0.9rem; }
+    #ordersTable th,
+    #ordersTable td { padding: 1rem 1.2rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--c-line); }
+    #ordersTable th { font-weight: 400; font-size: 0.75rem; letter-spacing: 0.16em; color: var(--c-gold-deep); background: var(--c-cream); border-bottom: 1px solid var(--c-line-strong); white-space: nowrap; }
+    #ordersTable td { color: var(--c-ink-soft); }
+    #ordersTable tbody tr:last-child td { border-bottom: 0; }
+    #ordersTable tbody tr:hover td { background: var(--c-cream); }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav__brand">ผึ้งสีเหลือง</a>
+      <nav class="nav__links" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--white">
+      <div class="container">
+        <div class="section__head" style="margin-bottom:var(--s-4);">
+          <span class="eyebrow">Admin</span>
+          <h1>รายการสั่งซื้อ</h1>
+          <span class="divider center"></span>
+          <p>เรียงจากรายการล่าสุดขึ้นก่อน</p>
+        </div>
+
+        <div class="table-wrap">
+          <table id="ordersTable">
+            <thead>
+              <tr>
+                <th>วันเวลา</th>
+                <th>ชื่อลูกค้า</th>
+                <th>เบอร์โทร/Line</th>
+                <th>รายการสินค้า</th>
+                <th>จำนวนเงินรวม</th>
+                <th>หมายเหตุ</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
